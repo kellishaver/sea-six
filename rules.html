@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Six</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/app.css" media="screen" />
+  <link rel="stylesheet" href="./css/print.css" media="print" />
+</head>
+
+<body>
+  <div class="container" style="margin-top:50px;">
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <img src="./img/logo.png" alt="Sea Six Logo" class="logo-small" />
+      </div>
+
+      <div class="col-5">
+        <h1 style="margin-top:80px">Sea Six - Rules</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <h4>Objective:</h4>
+        <p class="lead">The objective of <strong>Sea Six</strong> is to navigate your ships safely across the Square Sea while causing as much damage and destruction to your opponent's ships as possible.</p>
+
+        <h4>Setup:</h4>
+        <ol>
+          <li>For ease of play, it's best if players sit across from one another.</li>
+          <li>Players pick their color, taking the four corresponding dice.</li>
+          <li>Next, each player rolls one die to determine the starting player. The player who rolls the highest is first (re-roll ties).</li>
+          <li>The player who goes last then chooses which side of the board they wish to start from, orienting it toward them.</li>
+          <li>Finally, players place their four ships (dice) along the back row of their side of the board, with the "6" side facing up.</li>
+        </ol>
+        <h4>Gameplay</h4>
+        <p>Play takes place over a series of alternating turns in which players move their ships on the sea and attack enemy ships. Therefore, on their turn, a player will:</p>
+        <ol>
+          <li>Move A Ship (Leave Board if eligible)</li>
+          <li>Fire Cannons</li>
+        </ol>
+        <br>
+        <h5>1. Move A Ship</h5>
+        <p>The Squared Sea is home to a number of strong currents (represented by current icons) which will affect the movement of your ships. Players may either follow the current, or break the current.</p>
+        <p><strong>Follow the Current:</strong> Move a ship one space to an orthagonally adjacent square with the same current icon as the square it is leaving.</p>
+        <p><strong>Break the Current:</strong> Move a ship one space as indicated by the arrows on the square it is leaving.</p>
+        <p><strong>Note:</strong> No more than one ship may occupy a square at a time. Ships may not move through or jump over other ships.</p>
+        <div class="alert alert-info">
+          <p>If desired, a player may immediately perform a second move with the same ship by lowering its face value by one and performing another move.</p>
+          <p>Keep in mind, the face value of your ship die represents its health and affects its firing pattern (described below). Taking a second move and altering the ship's face value can be dangerous, but it can also be very strategically benificial.</p>
+        </div>
+        <div class="alert alert-success">
+          <p>If a ship has reached the opposite edge of the board from where it started and at least one ship in the opponent's fleet has been destroyed, the player may move that ship off of the board as a move action.</p>
+          <p>After moving a ship off the board, place it to the side for end-game scoring. Be sure not to change the face value of the removed ship die.</p>
+          <p>The additional second move action may not be used to remove a ship from the board.</p>
+        </div>
+        <br>
+        <h5>2. Fire Cannons</h5>
+        <p>Once a ship has finished moving, all loaded cannons on the ship will automatically fire. That firing pattern changes with each face of the ship die. Refer to the chart below for details. Note that double arrows represent a range of 2 squares and single arrows represent a range of one square.</p>
+        <br>
+        <div class="text-center">
+          <img class="face" src="./img/face-6.png">
+          <img class="face" src="./img/face-5.png">
+          <img class="face" src="./img/face-4.png">
+          <img class="face" src="./img/face-3.png">
+          <img class="face" src="./img/face-2.png">
+          <img class="face" src="./img/face-1.png">
+        </div>
+        <br>
+        <p>Any opponent ships struck by cannon fire must reduce their face value by 1. If a ship's value is already at 1 when it is damaged, that ship is considered <strong class="text-danger">destroyed</strong> and should be set to the side of the board for end-game scoring.</p>
+        <h4>Final Scoring</h4>
+        <p>The game ends when all ships are off the board or only one player has ships remaining on the board. At that time, players will calculate their final scores.</p>
+        <ul>
+          <li>All ships removed from the board score their face value in points.</li>
+          <li>All ships remaining on the board score 1 point.</li>
+          <li>All destroyed ships score -1 point.</li>
+        </ul>
+
+        <p><strong>The player with the highest score wins!</strong> In the event of a tie, the player who managed to sail the most ships successfully across the Squared Sea is the winner.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center print-hide" style="margin-top:50px; margin-bottom:100px">
+      <div class="col-8 text-center">
+        <a href="./index.html" class="btn btn-outline-primary"><i class="fas fa-caret-left"></i> Go Back</a>
+        <a href="./board.html" class="btn btn-outline-primary"><i class="fas fa-cog"></i> Generate A Board</a>
+        <a href="javascript:window.print()" class="btn btn-outline-primary"><i class="fas fa-print"></i> Print This Board</a>
+      </div>
+    </div>
+    <br><hr><footer class="text-center print-hide" style="margin-bottom:100px;">Copyright &copy; 2021 <a href="https://kellishaver.com">Kelli Shaver</a></footer>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.preloaded-img {
+	display:none;
+}
+
+#canvas{
+    border: 1px solid black;
+}
+
+h1 {
+	font-family: 'Luckiest Guy';
+	margin-bottom:1em;
+	color:#0991ab;
+	letter-spacing:3px;
+	text-shadow:3px 3px 3px rgba(0,0,0,0.2)
+}
+
+h3 {
+	font-family: 'Luckiest Guy';
+	margin-bottom:1em;
+	color:#0991ab;
+	letter-spacing:3px;
+}
+
+h4 {
+	font-family: 'Luckiest Guy';
+	margin-top:50px;
+	margin-bottom:1em;
+	letter-spacing:3px;
+}
+
+.face {
+	width:120px;
+	height:120;
+}
+
+.print-hide {
+	display:none;
+}
+
+.logo-small {
+	width:150px;
+	height:150px;
+}

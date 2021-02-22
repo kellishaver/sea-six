@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Six</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/app.css" media="screen" />
+  <link rel="stylesheet" href="./css/print.css" media="print" />
+</head>
+
+<body>
+  <div class="text-center" style="padding-top:3em">
+    <h1>Sea Six</h1>
+    <canvas id="canvas" width="720" height="720"></canvas>
+    <br><br>
+    <div class="container print-hide" style="margin-bottom:100px">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <p><strong>Note:</strong> This board is designed to print on A4 paper. If you're printing on different paper, you may need to scale the page down in your browser's print settings in order for it to fit properly.</p>
+          <a href="./index.html" class="btn btn-outline-primary"><i class="fas fa-caret-left"></i> Go Back</a>
+          <a href="./board.html" class="btn btn-outline-primary"><i class="fas fa-cog"></i> Regenerate Board</a>
+          <a href="javascript:window.print()" class="btn btn-outline-primary"><i class="fas fa-print"></i> Print This Board</a>
+        </div>
+      </div>
+    </div>
+    <br><hr><footer class="text-center print-hide" style="margin-bottom:100px;">Copyright &copy; 2021 <a href="https://kellishaver.com">Kelli Shaver</a></footer>
+  </div>
+  <img class="preloaded-img" id="tile-1" src="./img/1.png" />
+  <img class="preloaded-img" id="tile-2" src="./img/1.png" />
+  <img class="preloaded-img" id="tile-3" src="./img/2.png" />
+  <img class="preloaded-img" id="tile-4" src="./img/2.png" />
+  <img class="preloaded-img" id="tile-5" src="./img/3.png" />
+  <img class="preloaded-img" id="tile-6" src="./img/4.png" />
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
